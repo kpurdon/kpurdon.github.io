@@ -1,0 +1,13 @@
+title: "#HACKALERT"
+email: "kylepurdon@gmail.com"
+description: "A Personal Technology Blog by Kyle W. Purdon."
+baseurl: ""
+url: "http://kylepurdon.com"
+twitter_username: PurdonKyle
+github_username:  kpurdon
+
+markdown: kramdown
+paginate: 10
+
+exclude:
+  - vendor
