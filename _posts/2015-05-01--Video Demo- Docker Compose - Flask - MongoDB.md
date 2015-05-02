@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Video Demo] Docker Compose + Flask + MongoDB"
-tags: [docker, python, flask, mongodb]
+categories: [docker, python, flask, mongodb]
 ---
 
 I recently began exploring docker as a solution for isolating development and production environments. I have used vagrant and virtual machines for awhile but like the potential upside of docker. The following video tutorial guides a user from scratch in the creation of a docker containerized flask application connected to mongodb. Enjoy!
