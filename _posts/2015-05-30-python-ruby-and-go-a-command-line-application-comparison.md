@@ -7,6 +7,12 @@ categories: [python, ruby, golang, development]
 
 In late 2014 I built a tool called [pymr](https://github.com/kpurdon/pymr). I recently felt the need to learn golang and refresh my ruby knowledge so I decided to revisit the idea of pymr and build it in multiple languages. In this post I will break down the "mr" (merr) application (pymr, gomr, rumr) and present the implementation of specific pieces in each language. I will provide an overall personal preference at the end but will leave the comparison of individual pieces up to you.
 
+For those that want to skip directly to the code here are the repos:
+
+* [Python - pymr](https://github.com/kpurdon/pymr)
+* [Ruby - rumr](https://github.com/kpurdon/rumr)
+* [Golang - gomr](https://github.com/kpurdon/gomr)
+
 <!-- more -->
 
 Application Structure
