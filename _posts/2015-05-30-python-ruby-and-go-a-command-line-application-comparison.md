@@ -5,6 +5,10 @@ author: Kyle W. Purdon
 categories: [python, ruby, golang, development]
 ---
 
+**Edit (5/31):** There has been lots of great discussion on my [reddit post](http://www.reddit.com/r/programming/comments/37x1o0/python_ruby_and_golang_a_commandline_application/). I have made some edits (with notes) on many of the code examples you will see throughout this post.
+
+-----
+
 In late 2014 I built a tool called [pymr](https://github.com/kpurdon/pymr). I recently felt the need to learn golang and refresh my ruby knowledge so I decided to revisit the idea of pymr and build it in multiple languages. In this post I will break down the "mr" (merr) application (pymr, gomr, rumr) and present the implementation of specific pieces in each language. I will provide an overall personal preference at the end but will leave the comparison of individual pieces up to you.
 
 For those that want to skip directly to the code here are the repos:
@@ -176,8 +180,12 @@ new_tags = tuple(set(new_tags + cur_tags))
 For ruby this involves the use of the [.uniq](http://ruby-doc.org/core-2.2.0/Array.html#method-i-uniq) array method.
 
 {% highlight ruby %}
+# Edited (5/31)
+# old method:
+#  new_tags = (new_tags + cur_tags).uniq
+
 # new_tags and cur_tags are arrays
-new_tags = (new_tags + cur_tags).uniq
+new_tags |= cur_tags
 {% endhighlight %}
 
 #### Golang (gomr)
@@ -211,6 +219,7 @@ For python this involves the use of the [pickle](https://docs.python.org/2/libra
 {% highlight python %}
 # read
 cur_tags = pickle.load(open(pymr_file))
+
 # write
 pickle.dump(new_tags, open(pymr_file, 'wb'))
 {% endhighlight %}
@@ -222,8 +231,12 @@ For ruby this involves the use of the [YAML](http://ruby-doc.org/stdlib-2.2.1/li
 {% highlight ruby %}
 # read
 cur_tags = YAML.load_file(rumr_file)
+
 # write
-File.open(rumr_file, 'w') { |f| f.write new_tags.to_yaml }
+# Edited (5/31)
+# old method:
+#  File.open(rumr_file, 'w') { |f| f.write new_tags.to_yaml }
+IO.write(rumr_file, new_tags.to_yaml)
 {% endhighlight %}
 
 #### Golang (gomr)
@@ -233,6 +246,7 @@ For golang this involves the use of the [config](https://github.com/robfig/confi
 {% highlight go %}
 // read
 cfg, _ := config.ReadDefault(".gomr")
+
 // write
 outCfg.WriteFile(fn, 0644, "gomr configuration file")
 {% endhighlight %}
@@ -271,9 +285,12 @@ for root, _, fns in os.walk(basepath):
 For ruby this involves the [Find](http://ruby-doc.org/stdlib-2.2.0/libdoc/find/rdoc/Find.html) and [File](http://ruby-doc.org/core-2.2.0/File.html) classes.
 
 {% highlight ruby %}
-Find.find(basepath) do |path|
-      next unless File.basename(path) == '.rumr'
-      ...
+# Edited (5/31)
+# old method:
+#  Find.find(basepath) do |path|
+#        next unless File.basename(path) == '.rumr'
+Dir[File.join(options[:basepath], '**/.rumr')].each do |path|
+  ...
 {% endhighlight %}
 
 #### Golang (gomr)
@@ -335,7 +352,10 @@ subprocess.call(command, shell=True)
 For ruby this involves the [Kernel](http://ruby-doc.org/core-2.2.0/Kernel.html#method-i-system) module and the Backticks syntax.
 
 {% highlight ruby %}
-puts `bash -c "cd #{base_path} && #{command}"`
+# Edited (5/31)
+# old method
+#  puts `bash -c "cd #{base_path} && #{command}"`
+Dir.chdir(File.dirname(path)) { puts `#{command}` }
 {% endhighlight %}
 
 #### Golang (gomr)
