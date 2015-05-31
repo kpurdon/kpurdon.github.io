@@ -352,7 +352,7 @@ Packaging
 ==========
 -----
 
-The ideal mode of distribution for this tool is via a package. A user could then install it `tool install [pymr,rumr,gomr]` and have a new command on there systems path to execute. I dont want to golang in depth into packaging systems here, rather I will just show the basic configuration file needed in each language.
+The ideal mode of distribution for this tool is via a package. A user could then install it `tool install [pymr,rumr,gomr]` and have a new command on there systems path to execute. I dont want to go into packaging systems here, rather I will just show the basic configuration file needed in each language.
 
 #### Python (pymr)
 
