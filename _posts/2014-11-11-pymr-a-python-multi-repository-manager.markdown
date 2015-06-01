@@ -121,7 +121,7 @@ Yes, other tools have already solved this problem. Here are the common ones I ex
 * [MR](http://myrepos.branchable.com/)
 * [MU](https://github.com/fabioz/mu-repo)
 
-I found flaws in each of these tools that did not allow me to complete the task at hand in a satisfactory manor.
+I found flaws in each of these tools that did not allow me to complete the task at hand in a satisfactory manner.
 
 The biggest selling feature of PyMR (in my opinion) over others is that PyMR creates a configuration file (.pymr) WITH THE SOURCE DIRECTORY. Most of the above tools (if not all) create a single configuration file in the home directory which maps all of the "tagged" or "registered" directories so commands can be executed on them later. This does not allow the configuration to be source controlled and shared among a development team with the actual project source code.
 
