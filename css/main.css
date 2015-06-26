@@ -1,0 +1,18 @@
+body {
+    margin-top: 50px;
+    background: none;
+}
+
+.full {
+    background: url('../assets/flatirons.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#profile {
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
