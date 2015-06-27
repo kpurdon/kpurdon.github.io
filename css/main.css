@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    padding-top: 50px;
+    padding-top: 100px;
     background: none;
     height: 100%;
 }
@@ -17,7 +17,6 @@ body {
 }
 
 #profile {
-    padding: 15px;
-
-    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px;
+    background-color: rgba(55, 90, 127, 0.5);
 }
