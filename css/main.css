@@ -6,7 +6,7 @@ body {
     padding-top: 50px;
     background: none;
     background-color: rgba(44, 62, 80, 0.8);
-    height: 100%;
+    height: auto;
 }
 
 .full {
