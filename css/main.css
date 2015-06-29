@@ -5,7 +5,7 @@ html {
 body {
     padding-top: 50px;
     background: none;
-    background-color: rgba(55, 90, 127, 0.8);
+    background-color: rgba(44, 62, 80, 0.8);
     height: 100%;
 }
 
@@ -19,4 +19,5 @@ body {
 
 #profile {
     padding: 50px;
+    color: #FFF;
 }
