@@ -23,7 +23,7 @@ body {
 }
 
 .top-space {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 tr, th {
@@ -36,4 +36,8 @@ caption {
 
 span.glyphicon-star-empty {
     color: #000;
+}
+
+#locMap {
+    height: 300px;
 }

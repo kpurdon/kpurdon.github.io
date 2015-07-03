@@ -17,4 +17,5 @@ $(function(){
   $("#toolsTable").load("/includes/toolstable.html");
   $("#osTable").load("/includes/ostable.html");
   $("#cidTable").load("/includes/cidtable.html");
+  $("#projTable").load("/includes/projtable.html");
 });
