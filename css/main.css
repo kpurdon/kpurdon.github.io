@@ -17,9 +17,13 @@ body {
     -o-background-size: cover;
 }
 
+.img-profile {
+    width: 200px;
+}
+
 #content {
     padding: 50px;
-    color: #FFF;
+    color: LightGrey;
 }
 
 .top-space {
@@ -27,7 +31,7 @@ body {
 }
 
 tr, th {
-    color: #FFF;
+    color: LightGrey;
 }
 
 caption {
