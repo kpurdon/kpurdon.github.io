@@ -5,16 +5,7 @@ html {
 body {
     margin-top: 50px;
     background: none;
-    background-color: rgba(44, 62, 80, 0.8);
     min-height: 100%;
-}
-
-.full {
-    background: url('../assets/flatirons.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
 }
 
 .img-profile {
@@ -23,7 +14,7 @@ body {
 
 #content {
     padding: 50px;
-    color: LightGrey;
+    color: #000;
 }
 
 .top-space {
@@ -31,7 +22,7 @@ body {
 }
 
 tr, th {
-    color: LightGrey;
+    color: #000;
 }
 
 caption {
