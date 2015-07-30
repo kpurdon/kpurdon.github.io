@@ -5,38 +5,51 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Personal Website of Kyle W. Purdon">
     <meta name="author" content="Kyle W. Purdon">
 
     <title>Kyle W. Purdon</title>
 
     <!-- CSS -->
-    <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.5/flatly/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.5/cerulean/bootstrap.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"  rel="stylesheet">
     <link href="//cdn.rawgit.com/lipis/bootstrap-social/v4.9.1/bootstrap-social.css" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
   </head>
   <body>
 
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="mailto:kylepurdon@gmail.com">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <div class="container">
       <div class="row">
-        <div class="jumbotron col-sm-12 col-md-12 text-center">
-
-          <h1>YOU BROKE IT!</h1>
-          <p>Actually this is probably my fault. Sorry =(</p>
-          <p>
-            You can just head <a href="/">home</a> or you can publicly humiliate me
-            <a href="https://twitter.com/share" class="twitter-share-button" data-text="Hey @PurdonKyle I broke you website http://kylepurdon.com." data-size="large"></a>
-          </p>
-
-          <br>
-
-          <h2>Looking for a blog post?</h2>
-          <h3>You can probably find it <a href="http://kylepurdon.com/blog">here</a>.</h3>
-
-        </div> <!-- profile -->
+        <div class="col-md-12">
+          <div class="error-template">
+            <h1><big><big>404 Not Found</big></big></h1>
+            <p>Sorry, an error has occured, Requested page not found!</p>
+            <div class="error-actions">
+              <a href="/" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-home"></span>
+                Take Me Home </a><a href="/blog" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-pencil"></span> Looking For A Blog Post? </a>
+            </div>
+            <p>Please report this <a href="https://twitter.com/share" class="twitter-share-button" data-text="Hey @PurdonKyle I broke you website http://kylepurdon.com." data-size="small"></a></p>
+          </div>
+        </div>
       </div> <!-- row -->
     </div> <!-- container -->
 
@@ -44,8 +57,17 @@
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="//mailtoninja-kickstrap.netdna-ssl.com/js/v0/mailto.ninja.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="js/main.js"></script>
 
+    <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+     ga('create', 'UA-56650422-2', 'auto');
+     ga('send', 'pageview');
+    </script>
 
   </body>
 </html>
