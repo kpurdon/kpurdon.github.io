@@ -19,4 +19,5 @@ $(function(){
   $("#cidTable").load("/includes/cidtable.html");
   $("#projTable").load("/includes/projtable.html");
   $("#socialList").load("/includes/sociallist.html");
+  $("#exampleProjects").load("/includes/examplestable.html");
 });
