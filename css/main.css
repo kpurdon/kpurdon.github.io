@@ -4,7 +4,6 @@ html {
 
 body {
     margin-top: 50px;
-    background: none;
     min-height: 100%;
 }
 
@@ -14,7 +13,7 @@ body {
 
 #content {
     padding: 50px;
-    color: #000;
+    color: #FFF;
 }
 
 .top-space {
@@ -22,7 +21,7 @@ body {
 }
 
 tr, th {
-    color: #000;
+    color: #FFF;
 }
 
 caption {
@@ -30,7 +29,7 @@ caption {
 }
 
 span.glyphicon-star-empty {
-    color: #000;
+    color: #FFF;
 }
 
 #locMap {
