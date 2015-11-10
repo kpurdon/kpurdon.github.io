@@ -13,7 +13,7 @@ body {
 
 #content {
     padding: 50px;
-    color: #FFF;
+    color: #777777;
 }
 
 .top-space {
@@ -21,7 +21,7 @@ body {
 }
 
 tr, th {
-    color: #FFF;
+    color: #777777;
 }
 
 caption {
@@ -29,7 +29,7 @@ caption {
 }
 
 span.glyphicon-star-empty {
-    color: #FFF;
+    color: #777777;
 }
 
 #locMap {
