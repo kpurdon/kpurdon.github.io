@@ -1,4 +1,4 @@
-mailto.ninja(); // enable mailto.ninja()
+// mailto.ninja(); // enable mailto.ninja()
 
 // Twitter 404 Tweet Link
 !function(d,s,id){
