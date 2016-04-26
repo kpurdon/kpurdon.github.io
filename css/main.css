@@ -9,43 +9,28 @@ body {
 
 .img-profile {
     width: 200px;
+    opacity: 0.9;
 }
 
-#content {
-    padding: 50px;
-    color: #777777;
+ul {
+    margin-left: 20px;
+    padding: 0;
 }
 
-.top-space {
-    margin-top: 10px;
+ul li {
+    display: inline;
 }
 
-tr, th {
-    color: #777777;
-}
-
-caption {
-    font-size: x-large;
-}
-
-span.glyphicon-star-empty {
-    color: #777777;
-}
-
-#locMap {
-    height: 300px;
-}
-
-.error-template {
-    padding: 40px 15px;
+ul li a i {
+    color: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    padding-top: 10px;
     text-align: center;
+    transition: all 0.2s ease-in-out;
 }
 
-.error-actions {
-    margin-top:15px;
-    margin-bottom:15px;
-}
-
-.error-actions .btn {
-    margin-right:10px;
+ul li a i:hover {
+	opacity: .4;
 }
