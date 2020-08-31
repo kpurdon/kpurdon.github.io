@@ -1,39 +1,37 @@
-html {
-    height: 100%;
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
-body {
-    margin-top: 50px;
-    min-height: 100%;
+.bg {
+  background-image: url("/assets/background.jpg");
+  height: 100%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.img-profile {
-    width: 200px;
-    opacity: 0.9;
+.caption {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  width: 100%;
+  text-align: center;
 }
 
-h1, h4, h4 small {
-    color: rgba(0, 0, 0, 1);
+.caption span.border {
+  font-size: calc(2vw + 2vh + 1vmin);
+  text-transform: uppercase;
 }
 
-ul {
-    padding: 0;
+.caption span.border-sm {
+  font-size: calc(0.6vw + 0.6vh + 0.3vmin);
+  text-transform: uppercase;
 }
 
-ul li {
-    display: inline;
-}
-
-ul li a i {
-    color: rgba(0, 0, 0, 0.8);
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    padding-top: 10px;
-    text-align: center;
-    transition: all 0.2s ease-in-out;
-}
-
-ul li a i:hover {
-	opacity: .4;
+a {
+  color: #777;
+  text-decoration: none;
 }
