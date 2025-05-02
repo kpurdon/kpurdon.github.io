@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kyle Purdon</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 300px;
+    }
+
+    .card img.profile {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .card h1 {
+      font-size: 1.5rem;
+      margin: 0 0 1rem;
+    }
+
+    .linkedin-link {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+    }
+
+    .linkedin-link svg {
+      width: 100%;
+      height: 100%;
+      fill: #0077b5;
+      transition: fill 0.2s;
+    }
+
+    .linkedin-link:hover svg {
+      fill: #005582;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img class="profile" src="https://gravatar.com/avatar/3c580cc651fdd9cfa9c90d4da725e71349a558f3478fc8ea76af1ece64d9bd8a?s=300" alt="Kyle Purdon">
+    <h1>Kyle Purdon</h1>
+    <a class="linkedin-link" href="https://www.linkedin.com/in/kylepurdon" target="_blank" aria-label="LinkedIn Profile">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path d="M100.28 448H7.4V148.9h92.88zm-46.44-340a53.34 53.34 0 1 1 53.34-53.34 53.34 53.34 0 0 1-53.34 53.34zM447.9 448h-92.4V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 0-37.6 15.8-43.7 31-2.3 5.5-2.9 13.2-2.9 21v151h-92.4s1.2-245 0-270.1h92.4v38.3c-.2.3-.5.7-.7 1h.7v-1c12.3-19 34.3-46 83.6-46 61 0 106.8 39.8 106.8 125.2z"/>
+      </svg>
+    </a>
+  </div>
+
+</body>
+</html>
